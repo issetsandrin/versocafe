@@ -1,27 +1,19 @@
+// lib/main.dart
 import 'package:flutter/material.dart';
-import 'ui/home_page.dart';
+import 'package:flutter_modular/flutter_modular.dart';
+import 'package:versocafe/app_module.dart';
 
 void main() {
-  runApp(const MyApp());
+  runApp(ModularApp(module: AppModule(), child: const AppWidget()));
 }
 
-class MyApp extends StatelessWidget {
-  const MyApp({super.key});
-
+class AppWidget extends StatelessWidget {
+  const AppWidget({super.key});
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
-      title: 'Verso Café',
-      theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(
-          seedColor: Colors.orange,
-          primary: Colors.orange,
-        ),
-        useMaterial3: true,
-      ),
-      home: const HomePage(),
+    return MaterialApp.router(
+      debugShowCheckedModeBanner: false,
+      routerConfig: Modular.routerConfig,
     );
   }
-
-  // ...existing code...
 }

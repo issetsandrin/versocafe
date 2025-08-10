@@ -65,7 +65,7 @@ class GradientHeader extends StatelessWidget implements PreferredSizeWidget {
                       Text(
                         subtitle,
                         style: const TextStyle(
-                          color: Color.fromARGB(136, 255, 255, 255),
+                          color: Color(0xFFFFE0B2),
                           fontSize: 14, fontWeight: FontWeight.bold,
                         ),
                       ),

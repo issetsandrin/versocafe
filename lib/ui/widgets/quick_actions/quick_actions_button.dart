@@ -17,7 +17,10 @@ class QuickActionButton extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return InkWell(
-      onTap: onTap,
+     onTap: onTap,
+     splashColor: Colors.transparent,
+     highlightColor: Colors.transparent,
+     hoverColor: Colors.transparent,
       borderRadius: BorderRadius.circular(40),
       child: SizedBox(
         width: 80,

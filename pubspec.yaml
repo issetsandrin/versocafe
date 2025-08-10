@@ -13,10 +13,12 @@ dependencies:
   cupertino_icons: ^1.0.8
   line_awesome_flutter: ^3.0.1
   mobx: ^2.5.0
-  mobx_codegen: ^2.7.1
   flutter_modular: ^6.4.1
+  flutter_mobx: ^2.3.0
 
 dev_dependencies:
+  build_runner: ^2.4.6
+  mobx_codegen: ^2.3.0
   flutter_test:
     sdk: flutter
   flutter_lints: ^5.0.0

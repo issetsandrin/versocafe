@@ -12,9 +12,9 @@ abstract class _HomeControllerBase with Store {
   _HomeControllerBase() {
     actions = ObservableList.of([
       QuickAction(icon: LineAwesomeIcons.coffee_solid, label: 'Escala do Café', onTap: () => Modular.to.pushNamed('/escala')),
-      QuickAction(icon: LineAwesomeIcons.user_tie_solid, label: 'Colaboradores', onTap: () => Modular.to.pushNamed('/colaboradores')),
       QuickAction(icon: LineAwesomeIcons.certificate_solid, label: 'Ranking', onTap: () => Modular.to.pushNamed('/ranking')),
       QuickAction(icon: LineAwesomeIcons.trophy_solid, label: 'Conquistas', onTap: () => Modular.to.pushNamed('/conquistas')),
+      QuickAction(icon: LineAwesomeIcons.user_tie_solid, label: 'Colaboradores', onTap: () => Modular.to.pushNamed('/colaboradores')),
       QuickAction(icon: LineAwesomeIcons.cog_solid, label: 'Configurações', onTap: () => Modular.to.pushNamed('/config')),
     ]);
   }

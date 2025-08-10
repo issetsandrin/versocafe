@@ -23,7 +23,7 @@ class QuickActionButton extends StatelessWidget {
      hoverColor: Colors.transparent,
       borderRadius: BorderRadius.circular(40),
       child: SizedBox(
-        width: 80,
+        width: 82,
         child: Column(
           children: [
             Container(
@@ -40,8 +40,9 @@ class QuickActionButton extends StatelessWidget {
               label,
               textAlign: TextAlign.center,
               style: TextStyle(
-                fontSize: 11.5,
-                color:  Color.fromRGBO(255, 109, 0, 1)
+                fontSize: 12,
+                color:  Color.fromRGBO(255, 109, 0, 1),
+                fontWeight: FontWeight.w500
               ),
               maxLines: 2,
             ),

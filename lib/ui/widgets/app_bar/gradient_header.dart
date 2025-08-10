@@ -50,7 +50,8 @@ class GradientHeader extends StatelessWidget implements PreferredSizeWidget {
                         child: Text(
                           initials,
                           style: const TextStyle(
-                            fontSize: 20, fontWeight: FontWeight.bold,
+                            fontSize: 20,
+                            fontWeight: FontWeight.bold,
                             color: Color(0xFFE65100),
                           ),
                         ),
@@ -59,14 +60,17 @@ class GradientHeader extends StatelessWidget implements PreferredSizeWidget {
                       Text(
                         titleGreeting,
                         style: const TextStyle(
-                          color: Colors.white, fontSize: 16, fontWeight: FontWeight.bold,
+                          color: Colors.white,
+                          fontSize: 17,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                       Text(
                         subtitle,
                         style: const TextStyle(
                           color: Color(0xFFFFE0B2),
-                          fontSize: 14, fontWeight: FontWeight.bold,
+                          fontSize: 15,
+                          fontWeight: FontWeight.bold,
                         ),
                       ),
                     ],
@@ -74,21 +78,44 @@ class GradientHeader extends StatelessWidget implements PreferredSizeWidget {
                 ],
               ),
             ),
+            // nível + sino (sino fora do card)
             Positioned(
               top: 15,
               right: 15,
-              child: Container(
-                padding: const EdgeInsets.symmetric(horizontal: 12, vertical: 6),
-                decoration: BoxDecoration(
-                  color: const Color(0xFFFFE0B2),
-                  borderRadius: BorderRadius.circular(8),
-                ),
-                child: Text(
-                  levelText,
-                  style: const TextStyle(
-                    color: Color(0xFFE65100), fontSize: 12, fontWeight: FontWeight.bold,
+              child: Row(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  IconButton(
+                    padding: EdgeInsets.zero,
+                    constraints: const BoxConstraints(),
+                    iconSize: 25,
+                    onPressed: () {
+                      // ação do sininho
+                    },
+                    icon: const Icon(
+                      Icons.notifications_none,
+                      color: Colors.white,
+                    ),
                   ),
-                ),
+                  Container(
+                    padding: const EdgeInsets.symmetric(
+                      horizontal: 12,
+                      vertical: 6,
+                    ),
+                    decoration: BoxDecoration(
+                      color: const Color(0xFFFFE0B2),
+                      borderRadius: BorderRadius.circular(8),
+                    ),
+                    child: Text(
+                      levelText, // ex: "Nível 10"
+                      style: const TextStyle(
+                        color: Color(0xFFE65100),
+                        fontSize: 12,
+                        fontWeight: FontWeight.bold,
+                      ),
+                    ),
+                  ),
+                ],
               ),
             ),
           ],

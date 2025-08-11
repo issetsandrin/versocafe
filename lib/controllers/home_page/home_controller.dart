@@ -1,7 +1,7 @@
 // lib/app/controllers/home_controller.dart
 import 'package:mobx/mobx.dart';
 import 'package:line_awesome_flutter/line_awesome_flutter.dart';
-import 'package:versocafe/ui/widgets/quick_actions/quick_actions.dart';
+import 'package:versocafe/ui/pages/home/widgets/quick_actions.dart';
 import 'package:flutter_modular/flutter_modular.dart';
 
 part 'home_controller.g.dart';

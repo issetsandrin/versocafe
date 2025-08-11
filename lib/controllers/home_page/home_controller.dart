@@ -20,7 +20,7 @@ abstract class _HomeControllerBase with Store {
   }
 
   @observable
-  String userName = 'Desenvolvedor Versotech';
+  String userName = 'Vitor Versotech';
 
   @observable
   int level = 10;
